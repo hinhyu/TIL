@@ -51,9 +51,9 @@ a = { 'a': [1,2,3]}
 >>> a.keys()
 dict_keys(['name', 'phone', 'birth'])
 ```
-<br>
 3.0 이후 버전에서 반환 값으로 리스트가 필요한 경우에는 list(a.keys())를 사용<br>
 dict_keys 객체는 다음과 같이 사용할 수 있다. 리스트를 사용하는 것과 차이가 없지만, **리스트 고유의 append, insert, pop, remove, sort 함수는 수행할 수 없다.** <br>
+
 ```python
 >>> for k in a.keys():
 ...    print(k)
@@ -62,6 +62,7 @@ name
 phone
 birth
 ```
+
 ### Value 리스트 만들기(values)
 ```python
 >>> a.values()
@@ -74,7 +75,7 @@ dict_items([('name', 'pey'), ('phone', '0119993323'), ('birth', '1118')])
 ```
 items 함수는 Key와 Value의 쌍을 튜플로 묶은 값을 dict_items 객체로 돌려준다. <br>
 dict_values 객체와 dict_items 객체 역시 dict_keys 객체와 마찬가지로 리스트를 사용하는 것과 동일하게 사용할 수 있다.<br>
-###Key: Value 쌍 모두 지우기(clear)
+### Key: Value 쌍 모두 지우기(clear)
 ```python
 >>> a.clear()
 >>> a
